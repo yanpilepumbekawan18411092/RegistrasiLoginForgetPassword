@@ -113,7 +113,7 @@
         app:layout_constraintVertical_bias="0.745" />
 
     <TextView
-        android:id="@+id/textViewLinkToLogin"
+        android:id="@+id/linkForgetPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
@@ -129,7 +129,7 @@
         app:layout_constraintVertical_bias="0.808" />
 
     <TextView
-        android:id="@+id/textViewLinkToRegister"
+        android:id="@+id/createAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
