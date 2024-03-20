@@ -14,6 +14,11 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        binding.btnRegister.setOnClickListener {
+            val activityLogin = Intent(this, LoginActivity::class.java )
+            startActivity(activityLogin)
+        }
+        // Link untuk berpindah ke halaman Register
         binding.alreadyHaveAccount.setOnClickListener{
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)

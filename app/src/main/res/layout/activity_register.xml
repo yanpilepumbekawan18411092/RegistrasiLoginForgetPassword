@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="0.216" />
 
     <TextView
-        android:id="@+id/textViewUsername"
+        android:id="@+id/tvUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
@@ -52,16 +52,16 @@
         app:layout_constraintVertical_bias="0.420" />
 
     <EditText
-        android:id="@+id/editTextUsername"
+        android:id="@+id/edtUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/edit_text_register"
         android:ems="10"
         android:inputType="text"
         android:textColor="#13BABA"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.460" />
@@ -160,7 +160,7 @@
         app:layout_constraintVertical_bias="0.740" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnRegister"
         android:layout_width="127dp"
         android:layout_height="45dp"
         android:background="@drawable/btn_forget_pass"

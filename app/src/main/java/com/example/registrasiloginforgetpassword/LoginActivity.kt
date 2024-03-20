@@ -14,7 +14,13 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        //Tombol link ke halaman lupa password
+        // Tombol berpindah ke halaman Home
+        binding.btnLogin.setOnClickListener {
+            val activityHome = Intent(this,MainActivity::class.java)
+            startActivity(activityHome)
+        }
+
+        // Link untuk berpindah ke halaman lupa Password
         binding.linkForgetPassword.setOnClickListener{
             val intent = Intent(this,ForgetPasswordActivity::class.java)
             startActivity(intent)
@@ -23,7 +29,7 @@ class LoginActivity : AppCompatActivity() {
             Toast.makeText(this, "Halaman forget password", Toast.LENGTH_SHORT).show()
         }
 
-        //Tombol link ke halaman register
+        // Link untuk berpindah ke halaman Register
         binding.createAccount.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)

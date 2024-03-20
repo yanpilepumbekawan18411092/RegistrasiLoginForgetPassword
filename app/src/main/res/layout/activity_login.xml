@@ -39,11 +39,12 @@
         android:id="@+id/textViewEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:fontFamily="sans-serif-condensed"
         android:includeFontPadding="false"
         android:text="Email"
         android:textColor="#13BABA"
-        android:textSize="17dp"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.09"
@@ -52,19 +53,17 @@
         app:layout_constraintVertical_bias="0.450" />
 
     <EditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/edtEmail"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:background="@drawable/edit_text_register"
         android:ems="10"
         android:inputType="text"
         android:textColor="#13BABA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.495" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewPassword"
@@ -85,7 +84,8 @@
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/edit_text_register"
         android:ems="10"
         android:inputType="text"
@@ -98,9 +98,9 @@
         app:layout_constraintVertical_bias="0.625" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnLogin"
         android:layout_width="127dp"
-        android:layout_height="45dp"
+        android:layout_height="50dp"
         android:background="@drawable/btn_forget_pass"
         android:text="Login"
         android:textColor="#FFFFFF"
