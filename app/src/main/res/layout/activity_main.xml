@@ -4,90 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/my_home"
     tools:context=".MainActivity">
+
+    <!--  TextInputLayout, TextInputEditText: Input text... you may use textview or edittext too -->
+
+    <!-- Button share text -->
+
+    <!-- Button share Image -->
 
     <ImageView
         android:id="@+id/imageIv"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="224dp"
+        android:layout_height="222dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        android:src="@drawable/baseline_image_24"
+        android:src="@drawable/baseline_img_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.053" />
-    
-    <!--  TextInputLayout, TextInputEditText: Input text... you may use textview or edittext too -->
+        app:layout_constraintVertical_bias="0.044" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:hint="Enter Text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.379">
 
         <EditText
             android:id="@+id/textEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textCapSentences|textMultiLine" />
+            android:background="@drawable/edit_text_register"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textColorHint="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Button share text -->
+    <!-- Button share Text & Image -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/shareTextBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_forget_pass"
         android:text="Share Text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.580" />
+        app:layout_constraintVertical_bias="0.482" />
 
-    <!-- Button share Image -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/shareImageBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_forget_pass"
         android:text="Share Image"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.660" />
+        app:layout_constraintVertical_bias="0.549" />
 
-    <!-- Button share Text & Image -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/shareBothBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_forget_pass"
         android:text="Share Image &amp; Text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.740" />
+        app:layout_constraintVertical_bias="0.625" />
 
     <Button
         android:id="@+id/btnLogout"
@@ -97,7 +107,7 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/btn_forget_pass"
         android:text="Logout"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
