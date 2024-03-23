@@ -81,6 +81,15 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
+
+
+        // tombol untuk membuka browser
+        binding.btnOpenBrowser.setOnClickListener {
+            // Membuat intent utk terhubung ke halaman Browser
+            val intentOpenBrowser = Intent(Intent.ACTION_VIEW)
+            intentOpenBrowser.data = Uri.parse("https://www.google.com/")
+            startActivity(intentOpenBrowser)
+        }
     }
 
     private fun pickImage() {
@@ -157,8 +166,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         //if your want to get bitmap from imageview instead of uri
-//        val bitmapDrawable = binding.imageIv.drawable as BitmapDrawable
-//        bitmap = bitmapDrawable.bitmap
+        // val bitmapDrawable = binding.imageIv.drawable as BitmapDrawable
+        // bitmap = bitmapDrawable.bitmap
 
         val imageFolder = File(cacheDir, "images")
         var contentUri: Uri? = null
