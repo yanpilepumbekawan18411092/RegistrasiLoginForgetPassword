@@ -116,18 +116,33 @@ class MainActivity : AppCompatActivity() {
 
     private fun shareText() {
         val intent = Intent(Intent.ACTION_SEND)
-        intent.type = "type/plain"
+        intent.type = "text/plain"
         intent.putExtra(Intent.EXTRA_SUBJECT, "Subject here")
         intent.putExtra(Intent.EXTRA_TEXT, textToShare)
         startActivity(Intent.createChooser(intent, "Share Via"))
     }
 
     private fun shareImage() {
+        val contentUri = getContentUri()
 
+        val intent = Intent(Intent.ACTION_SEND)
+        intent.type = "image/png"
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Subject here")
+        intent.putExtra(Intent.EXTRA_STREAM, contentUri)
+        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+        startActivity(Intent.createChooser(intent, "Share Via"))
     }
 
     private fun shareImageText() {
+        val contentUri = getContentUri()
 
+        val intent = Intent(Intent.ACTION_SEND)
+        intent.type = "image/png"
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Subject here")
+        intent.putExtra(Intent.EXTRA_TEXT, textToShare)
+        intent.putExtra(Intent.EXTRA_STREAM, contentUri)
+        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+        startActivity(Intent.createChooser(intent, "Share Via"))
     }
 
     private fun getContentUri(): Uri? {
