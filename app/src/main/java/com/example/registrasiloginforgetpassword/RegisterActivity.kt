@@ -18,8 +18,8 @@ class RegisterActivity : AppCompatActivity() {
             val activityLogin = Intent(this, LoginActivity::class.java )
             startActivity(activityLogin)
         }
-        // Link untuk berpindah ke halaman Register
-        binding.alreadyHaveAccount.setOnClickListener{
+        // Link untuk berpindah ke halaman Login
+        binding.tvLogin.setOnClickListener{
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }

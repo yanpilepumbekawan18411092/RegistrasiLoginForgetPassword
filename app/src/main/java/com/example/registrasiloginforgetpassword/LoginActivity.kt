@@ -16,7 +16,7 @@ class LoginActivity : AppCompatActivity() {
 
         // Tombol berpindah ke halaman Home
         binding.btnLogin.setOnClickListener {
-            val activityHome = Intent(this,MainActivity::class.java)
+            val activityHome = Intent(this,HomeActivity::class.java)
             startActivity(activityHome)
         }
 
