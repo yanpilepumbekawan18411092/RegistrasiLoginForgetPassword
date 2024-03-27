@@ -35,16 +35,16 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        // handle click, pick image
+        // handle click, Memilih gambar
         binding.imageIv.setOnClickListener{
             pickImage()
         }
 
-        // handle click, share text
+        // handle click, baerbagi teks
         binding.shareTextBtn.setOnClickListener {
-            //get text from edit text
+            // ambil teks dari edit teks
             textToShare = binding.textEt.text.toString().trim()
-            //check if text empty or not
+            // cek jika teks kosong atau tdk
             if (textToShare.isEmpty()) {
                 shoeToast("Masukkan text..")
             }
@@ -53,9 +53,9 @@ class HomeActivity : AppCompatActivity() {
             }
         }
 
-        // handle click, share Image
+        // handle click, Berbagi gambar
         binding.shareImageBtn.setOnClickListener {
-            //check image is picked or not
+            // cek jika gambar sudah dipilih atau tdk
             if (imageUri == null) {
                 shoeToast("Pilih gambar...")
             }
@@ -65,11 +65,11 @@ class HomeActivity : AppCompatActivity() {
 
         }
 
-        // handle click, share image & text
+        // handle click, Berbagi gambar & teks
         binding.shareBothBtn.setOnClickListener {
-            //get text from edit text
+            // Ambil teks dari edit teks
             textToShare = binding.textEt.text.toString().trim()
-            //check if text empty or not
+            // cek jika kosong atau tdk
             if (textToShare.isEmpty()) {
                 shoeToast("Masukkan text..")
             }

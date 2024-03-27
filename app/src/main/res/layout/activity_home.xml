@@ -7,12 +7,6 @@
     android:background="@drawable/bg_home1"
     tools:context=".HomeActivity">
 
-    <!--  TextInputLayout, TextInputEditText: Input text... you may use textview or edittext too -->
-
-    <!-- Button share text -->
-
-    <!-- Button share Image -->
-
     <ImageView
         android:id="@+id/imageIv"
         android:layout_width="120dp"
@@ -29,8 +23,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.120" />
-
-    <!-- Button share Text & Image -->
 
 
     <EditText
